@@ -1,0 +1,33 @@
+{
+    "name": "NodeYT",
+    "app-name": "NodeYT",
+    "package-name": "NodeYT",
+    "project-type": "webview",
+    "icon": "./assets/icon/icon.png",
+    "dist-path": "./dist",
+    "permission": [
+        "android.permission.INTERNET"
+    ],
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "install": "adb install ./dist/app.apk",
+        "run": "adb shell am start -n com.android.js.NodeYT/com.android.js.webview.MainActivity",
+        "build:run": "androidjs build && npm run install && npm run run"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "androidjs": "^1.0.5",
+        "url": "^0.11.0",
+        "ytdl-core": "^1.0.3"
+    },
+    "theme": {
+        "fullScreen": true,
+        "colorAccent": "@color/colorAccent",
+        "colorPrimary": "@color/colorPrimary",
+        "colorPrimaryDark": "@color/colorPrimaryDark"
+    }
+}
