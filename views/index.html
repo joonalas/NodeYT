@@ -15,6 +15,13 @@
 	.app {
 		font-size: 30px;
 	}
+	
+	body {
+		background-color: black;
+		background-image: url('../assets/images/image.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 </style>
 
 <body>
@@ -23,7 +30,8 @@
 		<audio id="audio" controls="controls"></audio>
 	</div>
 
-	Video ID:<br>
+	<br>
+	
 	<input id='id-input' type='text' name='ID'><br>
 	<button onclick="stream()">Stream</button>
 
